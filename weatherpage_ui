@@ -124,9 +124,9 @@ class _HomePageState extends State<HomePage> {
     return Consumer<TimeProvider>(
       builder: (context, timeProvider, child) {
         print("time build");
-        // Get the location for the desired time zone
+        // Get the location for the desired time-zone
         final location = tz.getLocation('Asia/Karachi');
-        // Convert the current time to the specified time zone
+        // Convert the current time to the specified time-zone
         DateTime now = tz.TZDateTime.from(timeProvider.currentDateTime, location);
 
         return Column(
